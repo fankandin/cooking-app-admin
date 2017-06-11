@@ -1,0 +1,110 @@
+body {
+  font-size: 1rem;
+}
+a, .abutton {
+  color: #d0ca00; cursor: pointer;
+}
+a:hover {
+  color: #fff800;
+}
+.card .card-header a > i, .card .card-header .abutton > i {
+  margin-right: 0.3rem;
+}
+.card .card-header {
+  border-bottom: transparent;
+}
+
+.card {
+  border-color: #4d1616;
+  background-color: #181818;
+}
+.table thead th {
+  border-color: #4d1616;
+  text-transform: uppercase;
+  color: #a7adae;
+}
+.table-hover tbody tr:hover {
+  background: #4d4d4d;
+}
+.table-action {
+  text-align: center;
+}
+
+.table-action i.fa {
+  margin-right: 0.3rem;
+  position: relative;
+  top: 0.05rem;
+}
+
+.table-bordered td {
+  border-color: transparent;
+}
+
+button.btn.btn-danger {
+  margin-left: 15px;
+}
+
+i.fa-edit {
+  color: #d0ca00;
+  cursor: pointer;
+}
+i.fa-edit:hover {
+  color: #fff800;
+  cursor: pointer;
+}
+i.fa-trash {
+  color: #a52d2d;
+  cursor: pointer;
+}
+i.fa-trash:hover {
+  color: #c52d2d;
+  cursor: pointer;
+}
+table td i.fa-trash {
+  display: inline-block;
+  margin-left: 10px;
+}
+.form-control, .col-form-label, .form-group .btn, .form-group.info {
+  font-size: 1.2rem;
+}
+select.form-control {
+  font-size: 1.2rem;
+  height: auto !important;
+}
+
+.form-control.field-time {
+  width: 8rem;
+}
+
+.form-group.required label:after {
+  content:"*";
+  padding-left: 5px;
+}
+
+.form-element-icon {
+  margin-left: 8px;
+}
+
+input.form-control[type=text] {
+  display: inline-block;
+}
+
+.btm-bordered {
+  border-bottom: 1px solid #181818;
+  padding-bottom: 1rem;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.dropdown-item:focus:not(.active), .dropdown-item:hover:not(.active) {
+  color: #d0ca00;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+label.col-form-label {
+  font-size: 1em;
+}

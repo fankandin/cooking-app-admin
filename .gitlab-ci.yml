@@ -1,0 +1,45 @@
+cache:
+  untracked: true
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+
+stages:
+  - test
+  - lint
+  - dist
+  - containerize
+  - deploy
+
+test::test:
+  image: node:8.0.0
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run unit
+  tags:
+    - docker
+
+lint::lint:
+  image: node:8.0.0
+  stage: lint
+  before_script:
+    - "! [ -d node_modules ] && npm install"
+  script:
+    - npm run lint
+  tags:
+    - docker
+
+dist::dist:
+  image: node:8.0.0
+  stage: dist
+  before_script:
+    - "! [ -d node_modules ] && npm install"
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  tags:
+    - docker

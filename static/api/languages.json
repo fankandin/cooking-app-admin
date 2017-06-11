@@ -1,0 +1,10 @@
+{
+  "data": [
+    {"id": "1", "name": "Русский", "flag": "/static/img/flags/Russia.png"},
+    {"id": "2", "name": "English", "flag": "/static/img/flags/United-Kingdom.png"},
+    {"id": "3", "name": "Deutsch", "flag": "/static/img/flags/Germany.png"},
+    {"id": "4", "name": "Français", "flag": "/static/img/flags/France.png"},
+    {"id": "5", "name": "Español", "flag": "/static/img/flags/Spain.png"},
+    {"id": "6", "name": "Italiano", "flag": "/static/img/flags/Italy.png"}
+  ]
+}
