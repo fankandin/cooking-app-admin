@@ -14,6 +14,9 @@ Vue.use(VueShortkey)
 Vue.mixin({
   methods: {
     formatPreview: function (str, cut) {
+      if (str == null) {
+        return ''
+      }
       if (typeof cut === 'undefined') {
         cut = 255
       }
