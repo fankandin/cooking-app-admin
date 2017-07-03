@@ -28,7 +28,6 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // proxy all requests starting with /api to localhost:8080
       '/api': {
         target: 'http://localhost:8800/',
         changeOrigin: true,

@@ -39,6 +39,8 @@ import Api from '@/api'
 
 const entityDefault = {
   languageId: null,
+  cookTime: '',
+  precookTime: '',
   name: '',
   nameExtra: '',
   note: ''
